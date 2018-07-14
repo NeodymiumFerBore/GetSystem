@@ -11,4 +11,4 @@ Any pull request is welcome, but be aware that this is mainly a test project for
 
 
 ### Note about payloads.h:
-This is a basic x86 PE printing Hello World then system("pause"). This is used in the experimental functions of PE injection from memory (case 11 and 12 in GetSystem.c) with pfnZwUnmapViewOfSection, VirtualAllocEx and WriteProcessMemory on a suspended process. The base64 payload is decoded at runtime and is written over the view of section of a suspended calc.exe process.
+This is a basic x86 PE printing Hello World then system("pause"). This is used in the experimental functions of reflective PE injection (case 11 and 12 in GetSystem.c), which is a test for the function pfnZwUnmapViewOfSection on a suspended process. The base64 payload is decoded at runtime and is written over the view of section of a suspended calc.exe process.
